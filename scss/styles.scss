@@ -16,6 +16,7 @@ html{
     background-color: $celesteDonne;
     @include bordesHorizontales($verdeOscuro, 2px);
     z-index: 1;
+    width: 100%;
 
 }
 
@@ -31,8 +32,9 @@ html{
 /*SECCIONES*/
 
 header{
-    @include flex-row-center;
+    @include flex-column-center;
     background-color: $rosaDonne;
+    
     .logo{
         width: 300px;
         padding-bottom: 15px;
@@ -43,6 +45,15 @@ header{
             padding-bottom: 10px;
         }
     }
+}
+
+.subir{
+    padding: 0.2rem;
+    position: fixed;
+    bottom: 1rem;
+    right:1rem;
+    border-radius: 50%;
+    background-color: #dad8d8;
 }
 
 
